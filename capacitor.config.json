@@ -1,0 +1,32 @@
+{
+  "appId": "com.panagiotisplytas.planner",
+  "appName": "planner",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 20000,
+      "launchAutoHide": false,
+      "backgroundColor": "#31c9d4",
+      "androidSplashResourceName": "splash",
+      "androidScaleType": "CENTER_CROP",
+      "androidSpinnerStyle": "large",
+      "iosSpinnerStyle": "small",
+      "spinnerColor": "#999999",
+      "showSpinner": true,
+      "splashFullScreen": true,
+      "splashImmersive": true
+    },
+    "LocalNotifications": {
+      "smallIcon": "ic_stat_icon",
+      "iconColor": "#31c9d4",
+      "sound": "beep.wav"
+    }
+  },
+  "cordova": {},
+  "server": {
+    "url": "http://192.168.1.10:8100",
+    "cleartext": true
+  }
+}

@@ -1,0 +1,123 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="{{previousURL}}"></ion-back-button>
+    </ion-buttons>
+    <ion-title
+      class="ion-text-center"
+      style="width: 100%; position: absolute; left: 0; height: 0"
+      >Edit</ion-title
+    >
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <form [formGroup]="taskForm">
+    <ion-grid>
+      <ion-row size="12">
+        <ion-col size-sm="6" offset-sm="3">
+          <ion-item>
+            <ion-label position="floating">Title</ion-label>
+            <ion-input class="form-control" formControlName="title"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row size="12">
+        <ion-col size-sm="6" offset-sm="3">
+          <ion-item>
+            <ion-label position="floating">Description</ion-label>
+            <ion-textarea
+              class="form-control"
+              formControlName="description"
+            ></ion-textarea>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row size="12">
+        <ion-col size-sm="6" offset-sm="3">
+          <ion-item>
+            <ion-label>Mark as Completed</ion-label>
+
+            <ion-checkbox
+              class="form-control"
+              formControlName="completed"
+              checked="false"
+            ></ion-checkbox>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row size="12">
+        <ion-col size-sm="3" offset-sm="3">
+          <ion-item>
+            <ion-label position="floating">Start Date</ion-label>
+            <ion-datetime
+              displayFormat="D MMM YYYY H:mm"
+              min="2019"
+              formControlName="startDate"
+            ></ion-datetime>
+          </ion-item>
+        </ion-col>
+        <ion-col size-sm="3">
+          <ion-item>
+            <ion-label position="floating">End Date</ion-label>
+            <ion-datetime
+              displayFormat="D MMM YYYY H:mm"
+              min="2019"
+              formControlName="endDate"
+            ></ion-datetime>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row size="12">
+        <ion-col size-sm="6" offset-sm="3">
+          <ion-list>
+            <ion-item>
+              <ion-label position="floating ">Urgency</ion-label>
+
+              <ion-select
+                placeholder="Select the most fitting"
+                class="form-control"
+                formControlName="urgency"
+              >
+                <ion-select-option value="low">Low</ion-select-option>
+                <ion-select-option value="medium">Medium</ion-select-option>
+                <ion-select-option value="high">High</ion-select-option>
+                <ion-select-option value="severe">Severe</ion-select-option>
+                <ion-select-option value="critical">Critical</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+      <ion-row size="12">
+        <ion-col size-sm="6" offset-sm="3">
+          <ion-item>
+            <ion-label position="floating">Reminder</ion-label>
+            <ion-datetime
+              displayFormat="D MMM YYYY H:mm"
+              min="2019"
+              formControlName="reminder"
+            ></ion-datetime>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row size="12">
+        <ion-col size-sm="3" offset-sm="3">
+          <ion-button
+            [disabled]="!taskForm.valid && taskForm.touched"
+            (click)="onSubmit()"
+            >Update</ion-button
+          >
+        </ion-col>
+        <ion-col size-sm="3"
+          ><ion-button
+            routerLink="{{previousURL}}"
+            routerDirection="back"
+            color="danger"
+            >Cancel</ion-button
+          >
+        </ion-col></ion-row
+      >
+    </ion-grid>
+  </form>
+</ion-content>

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">planner</string>
+    <string name="title_activity_main">planner</string>
+    <string name="package_name">com.panagiotisplytas.planner</string>
+    <string name="custom_url_scheme">com.panagiotisplytas.planner</string>
+</resources>

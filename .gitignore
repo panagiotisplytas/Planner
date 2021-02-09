@@ -1,0 +1,70 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/dist
+/tmp
+/out-tsc
+/www
+/android/app/build
+/android/app/release
+/platforms
+/.sourcemaps
+/resources/android
+
+# Only exists if Bazel was run
+/bazel-out
+
+# dependencies
+/node_modules
+/plugins
+/e2e
+/.ionic
+/.versions
+/scripts
+
+# profiling files
+chrome-profiler-events*.json
+speed-measure-plugin*.json
+*.spec.ts
+.vscode
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/extensions.json
+.history/*
+*.sublime-project
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log*
+yarn-error.log
+testem.log
+/typings
+*~
+*.sw[mnpcod]
+
+# System Files
+.DS_Store
+Thumbs.db
+$RECYCLE.BIN/
+*.log
+log.txt
+.tmp
+*.tmp
+*.tmp.*
+UserInterfaceState.xcuserstate
