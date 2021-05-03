@@ -65,7 +65,7 @@ Then run to continue to Android Studio
 - [Ionic](https://github.com/ionic-team/ionic-framework)
 - [Angular](https://github.com/angular/angular)
 - [Capacitor](https://github.com/ionic-team/capacitor)
-- [JSONBin](https://jsonbi.io)
+- [JSONBin](https://jsonbin.io)
 
 ## License
 
