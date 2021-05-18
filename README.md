@@ -73,4 +73,4 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 
 ## Acknowledgments
 
-- Hat tip to Simon Grimm for the [tutorial](https://devdactic.com/sqlite-ionic-app-with-capacitor/), witch i used some parts of, on how to use the [sqlite plugin](https://github.com/capacitor-community/sqlite).
+- Hat tip to Simon Grimm for the [tutorial](https://devdactic.com/sqlite-ionic-app-with-capacitor/), which i used some parts of, on how to use the [sqlite plugin](https://github.com/capacitor-community/sqlite).
