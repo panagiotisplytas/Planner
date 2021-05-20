@@ -1,4 +1,4 @@
-# planner
+# Planner
 
 An easy-to-use app to schedule day-to-day events, tasks and reminders.
 
